@@ -41,6 +41,15 @@ If you'd like to track updates with Moonraker's Update Manager, KAMP's technique
     > **Note:**
     > Whenever Moonraker configurations are changed, it must be restarted for changes to take effect.
 
+To flash an updated Klipper firmware to your mainboard:
+
+1. Have a formatted SD card in your mainboard.
+2. Update Klipper as usual.
+3. Copy `update_creality_board.sh` to your home directory, which assumes your Klipper repo is in `~/klipper`
+4. `chmod +x update_creality_board.sh`
+5. `.\update_creality_board.sh`
+6. Power cycle your mainboard. Script shuts down the Klipper host as my machine powers the Pi from a 24V-to-5V converter fed from the printer's power supply.
+
 ## Thanks, acknowledgements, useful links
 
 - Anh Cao on the Sovol Facebook Group
